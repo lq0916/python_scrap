@@ -192,8 +192,6 @@ def fun_unquote_test():
     print(unquote(url))
 # fun_unquote_test()
 
-# 130
-
 # 分析Robots协议 ->urllib.robotparser模块
 # robots.txt 爬虫协议 网络爬虫排除标准
 # 我反正不看 哈哈哈

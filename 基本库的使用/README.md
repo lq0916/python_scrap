@@ -157,3 +157,33 @@ def fun_unquote_test():
     print(unquote(url))
 fun_unquote_test()
 ```
+
+### 分析Robots协议 
+>->urllib.robotparser模块
+> robots.txt 爬虫协议 网络爬虫排除标准
+> 我反正不看 哈哈哈
+> 爬虫名称
+
+### robotparser
+> 使用该模块解析robots.txt ->RobotFileParser
+
+```python
+def fun_robotparser_test():
+    from urllib.robotparser import RobotFileParser
+
+    rp = RobotFileParser() # rp = RobotFileParser('http://www.jianshu.com./robots.txt')
+    rp.set_url('http://www.jianshu.com./robots.txt')
+    rp.read()
+    print(rp.can_fetch('*', 'http://www.jianshu.com/p/b67554025d7d'))
+    print(rp.can_fetch('*', 'http://www.jianshu.com/search?q=python&page=1&type=collections'))
+# fun_robotparser_test()
+def fun_robotparser_test_parser():
+    from urllib.robotparser import RobotFileParser
+    from urllib.request import urlopen
+
+    rp = RobotFileParser()
+    rp.parse(urlopen('http://www.jianshu.com/robots.txt').read().decode('utf-8').split('\n'))
+    print(rp.can_fetch('*', 'http://www.jianshu.com/p/b67554025d7d'))
+    print(rp.can_fetch('*', 'http://www.jianshu.com/search?q=python&page=1&type=collections'))
+fun_robotparser_test_parser()
+```
