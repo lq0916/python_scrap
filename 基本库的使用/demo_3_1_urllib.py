@@ -3,6 +3,11 @@ urllib 基本库的使用
 Author: lq0916
 24 7 26
 """
+"""
+Title:Urllib库的基本使用
+Author:无医
+Time:2024/7/26 
+"""
 
 
 ### 初级使用 get
