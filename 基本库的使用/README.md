@@ -816,3 +816,6 @@ def fun_compile_test():
 
 fun_compile_test()
 ```
+
+**>案例:猫眼电影排行榜抓取**
+> file:demo_3_maoyan_board.py
