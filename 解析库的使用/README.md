@@ -357,3 +357,6 @@ fun_css_test()
 ```
 >find_相关方法
 >![img.png](../image/img_4_find_.png)
+
+## pyquery库的使用
+>相较于BeautifulSoup->CSS选择器的功能更加强大
